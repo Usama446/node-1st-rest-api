@@ -18,24 +18,6 @@ router.get('/',checkAuth, (req, res, next) => {
     })
 })
 
-// router.post('/insert',(req,res,next) =>{
-//     const product = new Product({
-//         _id: new mongoose.Types.ObjectId,
-//         name : req.body.name
-//     })
-//     product.save()
-//     .then(result => {
-//         res.status(200).json({
-//             new_product: result
-//         })
-//     })
-//     .catch(err => {
-//         res.status(500).json({
-//             error: err
-//         })
-//     })
-// })
-
 router.post('/Add',(req,res,next)=>{
     // console.log(req.body);
     const file = req.files.photo
